@@ -8,7 +8,8 @@ const pool = new pg.Pool({
     port: 5432,
     database: 'jma503/trial',
     user: 'jma503',
-    password: DB_PASSWORD
+    password: DB_PASSWORD,
+    ssl: true 
 })
 
 const app = express();
