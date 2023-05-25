@@ -1,0 +1,16 @@
+{
+  "name": "activity-tbd-",
+  "version": "1.0.0",
+  "description": "1. Create a repo No Prime repo to fork this time.  Choose a teammate to create a repo, create it in GitHub and then clone it on your local machine  Run npm init in your new repo  LiveShare with your teammates  Your teammates may fork your repo if they want their own copy and/or want to submit PRs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
