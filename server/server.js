@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+app.use(express.static('server/public'));
 app.use(express.json)
 
 app.listen(PORT, () => {
@@ -11,4 +12,4 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     console.log('Simple get')
     res.status(200).send();
-})
+});
