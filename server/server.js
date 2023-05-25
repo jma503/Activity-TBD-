@@ -1,5 +1,5 @@
 const express = require('express');
-const express = require('pg');
+const pg = require('pg');
 
 const DB_PASSWORD = process.env.DB_PASSWORD;
 
