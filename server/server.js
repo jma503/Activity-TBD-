@@ -28,6 +28,23 @@ app.get ('/messages', (req, res) => {
         })        
 })
 
+app.post ('/messages', (req, res) => {
+    let messages = req.body;
+
+    let query = `
+    INSERT INTO "messages" ("title", "text", "timestamp")
+    VALUES ($1, $2, $3); `;
+    pool.query(queryText), [newMessage.title, newMessage.text, newMessage.timestamp]
+    .then((result) => {
+        res.sendStatus(201);
+    })
+    .catch((err) => {
+        console.log(`Error making query ${queryText}`, err);
+        res.sendStatus(500);
+    });
+
+})
+
 app.use(express.static('server/public'));
 app.use(express.json)
 
