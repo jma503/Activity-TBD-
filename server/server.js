@@ -10,4 +10,5 @@ app.listen(PORT, () => {
 
 app.get('/', (req, res) => {
     console.log('Simple get')
+    res.status(200).send();
 })
