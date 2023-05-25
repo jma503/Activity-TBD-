@@ -8,6 +8,6 @@ app.listen(PORT, () => {
     console.log('App likes to listen to radio station: ', PORT);
 })
 
-app.get('/' (req, res) => {
+app.get('/', (req, res) => {
     console.log('Simple get')
 })
